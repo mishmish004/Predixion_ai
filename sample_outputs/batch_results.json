@@ -1,0 +1,382 @@
+[
+  {
+    "conversation_id": "coll_001",
+    "overall_score": 5,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 5,
+        "explanation": "The agent followed RBI guidelines - proper introduction, no threats, no harassment, respectful tone, proper disclosure. (Turn 3)"
+      },
+      "goal_achievement": {
+        "score": 5,
+        "explanation": "The agent successfully negotiated a partial payment plan with a specific amount and date (Turn 10). The customer committed to paying 6,500 rupees by 8 PM."
+      },
+      "communication_quality": {
+        "score": 5,
+        "explanation": "The agent clearly explained the payment plan, late charges, and credit score impact (Turn 7-9). The customer understood the proposal and agreed to it."
+      },
+      "empathy_tone": {
+        "score": 5,
+        "explanation": "The agent showed empathy towards the customer's financial problems (Turn 5) and adapted the tone to be cooperative and helpful."
+      },
+      "objection_handling": {
+        "score": 5,
+        "explanation": "The agent expertly handled the customer's objections by offering a solution (partial payment plan with extension) and addressing every concern (Turn 8-9)."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "The agent successfully negotiated a partial payment plan with a specific amount and date, showing empathy and cooperation throughout the call.",
+    "compliance_flags": [],
+    "improvement_suggestions": [],
+    "sentiment_shifts": [
+      "neutral -> empathetic -> accepting"
+    ],
+    "precedent_conversation_id": "coll_001",
+    "precedent_similarity_score": 0.8505841
+  },
+  {
+    "conversation_id": "coll_002",
+    "overall_score": 1,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 1,
+        "explanation": "Severe compliance violation - agent made threats, showed no empathy, violated RBI guidelines on fair treatment. Transcript evidence: Turn 5 (dhamki de rahe ho), Turn 7 (ghar pe log aayenge), Turn 9 (jo karna hai karo)."
+      },
+      "goal_achievement": {
+        "score": 1,
+        "explanation": "No agreement reached, customer refused to pay. Transcript evidence: Turn 10 (main phone rakh rahi hoon, bahut badtameezi kar rahe ho)."
+      },
+      "communication_quality": {
+        "score": 2,
+        "explanation": "Poor communication - minimal responses, made customer work hard for basic information. Transcript evidence: Agent's responses were curt and uncooperative."
+      },
+      "empathy_tone": {
+        "score": 1,
+        "explanation": "No empathy shown for genuine hardship. Transcript evidence: Turn 5 (madam, yeh sab bahana hai) and Turn 7 (time nahi hai)."
+      },
+      "objection_handling": {
+        "score": 1,
+        "explanation": "Failed completely - ignored or worsened objections. Transcript evidence: Agent dismissed customer's concerns and escalated the situation."
+      }
+    },
+    "outcome": "refused",
+    "summary": "This call was marred by severe compliance violations, poor communication, and a complete lack of empathy. The agent's threatening language and dismissive attitude led to a failed negotiation and a customer who refused to pay.",
+    "compliance_flags": [
+      "Threatening language - 'ghar pe log aayenge'",
+      "No empathy for genuine hardship",
+      "Did not offer any restructuring options",
+      "Dismissive of customer's situation"
+    ],
+    "improvement_suggestions": [
+      "Use a more empathetic tone and acknowledge customer's hardship",
+      "Offer restructuring options or alternative payment plans",
+      "Avoid using threatening language and focus on finding a mutually beneficial solution"
+    ],
+    "sentiment_shifts": [
+      "neutral -> frustrated -> hostile"
+    ],
+    "precedent_conversation_id": "coll_002",
+    "precedent_similarity_score": 0.8547373
+  },
+  {
+    "conversation_id": "coll_003",
+    "overall_score": 5,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 5,
+        "explanation": "The agent followed RBI guidelines: proper introduction (Turn 3), no threats, no harassment, respectful tone, and proper disclosure (Turn 7)."
+      },
+      "goal_achievement": {
+        "score": 5,
+        "explanation": "The customer agreed to pay the outstanding amount of 12,200 INR by 16th January, shaam 6 baje (Turn 7)."
+      },
+      "communication_quality": {
+        "score": 5,
+        "explanation": "The agent communicated clearly and professionally throughout the call, explaining all details (amount, due date, consequences, options) and active listening (Turn 5-6)."
+      },
+      "empathy_tone": {
+        "score": 5,
+        "explanation": "The agent showed genuine empathy and acknowledged the customer's situation (Turn 5-6), adapting tone appropriately."
+      },
+      "objection_handling": {
+        "score": 5,
+        "explanation": "The agent expertly handled the customer's objection (Turn 4) by offering a solution (payment by 16th January) and addressing every concern (consequences of late payment)."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "Excellent call - proper introduction, empathetic handling, negotiated payment successfully, clear next steps communicated.",
+    "compliance_flags": [],
+    "improvement_suggestions": [],
+    "sentiment_shifts": [
+      "neutral -> cooperative"
+    ],
+    "precedent_conversation_id": "coll_001",
+    "precedent_similarity_score": 0.8399885
+  },
+  {
+    "conversation_id": "coll_004",
+    "overall_score": 4,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 4,
+        "explanation": "Proper introduction, no threats, no harassment, respectful tone, proper disclosure. However, the agent mentioned the legal process as a threat (Turn 5), which is a compliance violation."
+      },
+      "goal_achievement": {
+        "score": 5,
+        "explanation": "Secured full payment commitment with clear date/amount, or best possible outcome for the situation. The customer agreed to EMI conversion - 12 months, 7,200 per month."
+      },
+      "communication_quality": {
+        "score": 4,
+        "explanation": "Good communication with minor gaps in information sharing. The agent explained the options clearly, but there was a minor delay in response (Turn 11)."
+      },
+      "empathy_tone": {
+        "score": 4,
+        "explanation": "Showed empathy but could have been warmer or more adaptive. The agent acknowledged the customer's situation (Turn 5) but did not fully adapt to the customer's concerns."
+      },
+      "objection_handling": {
+        "score": 4,
+        "explanation": "Handled objections well with some solutions offered. The agent offered settlement and EMI conversion options, but did not fully address the customer's concerns about the monthly payment amount (Turn 8)."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "The agent handled the escalation professionally, offered multiple restructuring options, and secured a payment commitment. However, there were minor compliance issues and room for improvement in objection handling.",
+    "compliance_flags": [
+      "Mentioned legal process as a threat"
+    ],
+    "improvement_suggestions": [
+      "Avoid mentioning legal process as a threat, provide more detailed information about the monthly payment amount, and adapt to customer concerns more effectively"
+    ],
+    "sentiment_shifts": [
+      "Neutral -> Concerned -> Accepting"
+    ],
+    "precedent_conversation_id": "coll_004",
+    "precedent_similarity_score": 0.8285638
+  },
+  {
+    "conversation_id": "coll_005",
+    "overall_score": 3,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 3,
+        "explanation": "Agent did not properly introduce self, violating compliance (Turn 3). However, no threats, harassment, or abusive language were used."
+      },
+      "goal_achievement": {
+        "score": 4,
+        "explanation": "Partial payment was agreed upon with a specific date (Turn 14), indicating a successful negotiation outcome."
+      },
+      "communication_quality": {
+        "score": 3,
+        "explanation": "Agent gave minimal responses, making the customer work hard to get basic information (Turns 10-12). However, the conversation remained professional."
+      },
+      "empathy_tone": {
+        "score": 4,
+        "explanation": "Agent showed empathy by acknowledging the customer's situation and adapting their tone appropriately (Turns 8-9)."
+      },
+      "objection_handling": {
+        "score": 4,
+        "explanation": "Agent handled objections well by offering a solution (late fee) and addressing the customer's concern (Turns 8-11)."
+      }
+    },
+    "outcome": "partial",
+    "summary": "The agent mostly complied with RBI guidelines, handled objections well, and achieved a partial payment agreement. However, communication quality could be improved by providing more information upfront.",
+    "compliance_flags": [
+      "COMPLIANCE_VIOLATION by agent: Agent does not disclose identity properly"
+    ],
+    "improvement_suggestions": [
+      "Provide a proper introduction, offer more information upfront, and confirm PTP details to improve communication quality and compliance."
+    ],
+    "sentiment_shifts": [
+      "Customer sentiment shifted from neutral to cooperative as the conversation progressed."
+    ],
+    "precedent_conversation_id": "coll_005",
+    "precedent_similarity_score": 0.87268925
+  },
+  {
+    "conversation_id": "coll_006",
+    "overall_score": 4,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 4,
+        "explanation": "Minor compliance violation in the initial greeting (Turn 3) where the agent did not clearly disclose her identity. However, the agent mostly followed RBI guidelines throughout the call."
+      },
+      "goal_achievement": {
+        "score": 4,
+        "explanation": "Secured a callback for confirmation, which is a good outcome for a settlement negotiation. However, the agent could have explored more options before escalating to a senior."
+      },
+      "communication_quality": {
+        "score": 5,
+        "explanation": "Clear and professional communication throughout the call. The agent explained the settlement offer and its benefits clearly (Turn 5)."
+      },
+      "empathy_tone": {
+        "score": 5,
+        "explanation": "The agent showed empathy and understanding towards the customer's financial constraints (Turn 7). The tone remained professional and caring."
+      },
+      "objection_handling": {
+        "score": 4,
+        "explanation": "The agent handled objections well, but could have explored more options before escalating to a senior. The agent offered a middle ground (Turn 7) and a callback for confirmation (Turn 11)."
+      }
+    },
+    "outcome": "callback",
+    "summary": "The agent conducted a professional settlement negotiation, securing a callback for confirmation. However, there was a minor compliance violation in the initial greeting and some room for improvement in objection handling.",
+    "compliance_flags": [
+      "COMPLIANCE_VIOLATION by agent: Agent did not disclose her identity clearly in the initial greeting"
+    ],
+    "improvement_suggestions": [
+      "Clearly disclose identity in the initial greeting",
+      "Explore more options before escalating to a senior"
+    ],
+    "sentiment_shifts": [
+      "neutral -> frustrated -> accepting"
+    ],
+    "precedent_conversation_id": "coll_006",
+    "precedent_similarity_score": 0.81950295
+  },
+  {
+    "conversation_id": "coll_007",
+    "overall_score": 4,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 5,
+        "explanation": "Agent followed RBI guidelines - proper introduction, no threats, no harassment, respectful tone, proper disclosure."
+      },
+      "goal_achievement": {
+        "score": 4,
+        "explanation": "Secured partial payment commitment with specific dates, but delayed payment was acknowledged."
+      },
+      "communication_quality": {
+        "score": 4,
+        "explanation": "Good communication with minor gaps in information sharing, e.g., not explicitly explaining the consequences of late payment charges."
+      },
+      "empathy_tone": {
+        "score": 4,
+        "explanation": "Showed empathy but could have been warmer or more adaptive, e.g., not fully acknowledging the customer's hardship."
+      },
+      "objection_handling": {
+        "score": 4,
+        "explanation": "Handled objections well with some solutions offered, e.g., proposing a partial payment plan, but could have been more proactive in addressing the customer's concerns."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "The agent handled the follow-up call professionally, acknowledged the customer's hardship, and secured a partial payment commitment with specific dates. However, there were minor gaps in communication and empathy.",
+    "compliance_flags": [],
+    "improvement_suggestions": [
+      "Be more explicit in explaining the consequences of late payment charges.",
+      "Fully acknowledge the customer's hardship and show more empathy.",
+      "Be more proactive in addressing the customer's concerns."
+    ],
+    "sentiment_shifts": [
+      "Customer sentiment shifted from neutral to frustrated due to the delayed payment, but eventually became accepting after the agent proposed a partial payment plan."
+    ],
+    "precedent_conversation_id": "coll_008",
+    "precedent_similarity_score": 0.8362418
+  },
+  {
+    "conversation_id": "coll_008",
+    "overall_score": 4,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 5,
+        "explanation": "Agent followed RBI guidelines, no threats or harassment. Initial failure to verify payment was addressed promptly and professionally."
+      },
+      "goal_achievement": {
+        "score": 5,
+        "explanation": "Issue resolved, payment transferred, and customer confirmed receipt of confirmation message."
+      },
+      "communication_quality": {
+        "score": 4,
+        "explanation": "Agent provided clear information, but could have been more proactive in verifying payment details initially."
+      },
+      "empathy_tone": {
+        "score": 5,
+        "explanation": "Agent showed genuine empathy and understanding of customer's situation, adapting tone to address customer's concerns."
+      },
+      "objection_handling": {
+        "score": 5,
+        "explanation": "Agent expertly handled customer's objection, offering a solution (internal transfer request) and addressing every concern in a professional manner."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "The agent handled the call professionally, resolving the issue and transferring the payment. The customer was relieved and thanked the agent for their help.",
+    "compliance_flags": [],
+    "improvement_suggestions": [
+      "Be more proactive in verifying payment details initially, and provide clear information to customers in a timely manner."
+    ],
+    "sentiment_shifts": [
+      "neutral -> frustrated -> relieved"
+    ],
+    "precedent_conversation_id": "coll_005",
+    "precedent_similarity_score": 0.85540164
+  },
+  {
+    "conversation_id": "coll_009",
+    "overall_score": 4,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 5,
+        "explanation": "Agent followed RBI guidelines - proper introduction, no threats, no harassment, respectful tone, proper disclosure."
+      },
+      "goal_achievement": {
+        "score": 4,
+        "explanation": "Secured partial payment commitment with specific timeline, but minor delay in response noted."
+      },
+      "communication_quality": {
+        "score": 4,
+        "explanation": "Good communication with minor gaps in information sharing, e.g., customer had to ask for clarification on OTS amount."
+      },
+      "empathy_tone": {
+        "score": 4,
+        "explanation": "Agent acknowledged customer's problem and offered flexibility, but could have been warmer or more adaptive."
+      },
+      "objection_handling": {
+        "score": 4,
+        "explanation": "Handled objections well with some solutions offered, but minor delay in response noted."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "The agent handled the escalation well, offering multiple restructuring options and converting a hostile customer to agreement. Minor delays in response were noted, but handled well.",
+    "compliance_flags": [],
+    "improvement_suggestions": [
+      "Respond promptly to customer inquiries, and provide clear explanations for options and timelines."
+    ],
+    "sentiment_shifts": [
+      "neutral -> frustrated -> accepting"
+    ],
+    "precedent_conversation_id": "coll_004",
+    "precedent_similarity_score": 0.8522893
+  },
+  {
+    "conversation_id": "coll_010",
+    "overall_score": 5,
+    "dimensions": {
+      "compliance_ethics": {
+        "score": 5,
+        "explanation": "The agent followed RBI guidelines - proper introduction, no threats, no harassment, respectful tone, proper disclosure."
+      },
+      "goal_achievement": {
+        "score": 5,
+        "explanation": "The customer agreed to make payment, and the agent offered flexibility and understanding."
+      },
+      "communication_quality": {
+        "score": 5,
+        "explanation": "The agent communicated clearly and professionally, explaining the situation and offering options."
+      },
+      "empathy_tone": {
+        "score": 5,
+        "explanation": "The agent showed genuine empathy and understanding, inquiring about the customer's health and offering flexibility."
+      },
+      "objection_handling": {
+        "score": 5,
+        "explanation": "The agent expertly handled the customer's objection, offering understanding and flexibility, and negotiated a payment plan."
+      }
+    },
+    "outcome": "ptp",
+    "summary": "Excellent call - proper introduction, empathetic handling, negotiated payment successfully, clear next steps communicated.",
+    "compliance_flags": [],
+    "improvement_suggestions": [],
+    "sentiment_shifts": [
+      "neutral -> empathetic"
+    ],
+    "precedent_conversation_id": "coll_001",
+    "precedent_similarity_score": 0.8377268
+  }
+]

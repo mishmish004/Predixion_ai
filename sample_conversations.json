@@ -1,0 +1,356 @@
+{
+  "conversations": [
+    {
+      "conversation_id": "coll_001",
+      "call_type": "reminder",
+      "messages": [
+        {"role": "agent", "content": "Hello, kya main Rajesh Kumar ji se baat kar sakta hoon?", "timestamp": "2024-01-15T10:30:00Z"},
+        {"role": "customer", "content": "Haan, main bol raha hoon. Kaun?", "timestamp": "2024-01-15T10:30:05Z"},
+        {"role": "agent", "content": "Good morning sir, main Priya bol rahi hoon ABC Finance se. Sir, aapka credit card payment pending hai, total amount 15,847 rupees. Yeh 10 din overdue ho gaya hai.", "timestamp": "2024-01-15T10:30:12Z"},
+        {"role": "customer", "content": "Haan haan, mujhe pata hai. Actually kuch financial problem chal raha hai abhi.", "timestamp": "2024-01-15T10:30:25Z"},
+        {"role": "agent", "content": "Sir, main samajh sakti hoon. Aap batayein ki kya problem hai, shayad hum koi solution nikal sakein. Kya aap partial payment kar sakte hain abhi?", "timestamp": "2024-01-15T10:30:35Z"},
+        {"role": "customer", "content": "Partial matlab kitna?", "timestamp": "2024-01-15T10:30:45Z"},
+        {"role": "agent", "content": "Sir, agar aap 8,000 rupees abhi pay kar dein, toh baaki amount ke liye hum aapko 15 din ka extension de sakte hain. Isse aapka late fee bhi kam rahega.", "timestamp": "2024-01-15T10:30:55Z"},
+        {"role": "customer", "content": "8,000 thoda zyada hai. 5,000 ho sakta hai?", "timestamp": "2024-01-15T10:31:10Z"},
+        {"role": "agent", "content": "Sir, 5,000 se kaam nahi chalega kyunki minimum due hi 6,500 hai. Agar aap 6,500 bhi de dein aaj, toh late charges rukk jayenge aur credit score pe bhi impact kam hoga.", "timestamp": "2024-01-15T10:31:25Z"},
+        {"role": "customer", "content": "Theek hai, 6,500 kar dunga aaj shaam tak.", "timestamp": "2024-01-15T10:31:40Z"},
+        {"role": "agent", "content": "Thank you sir! Toh main note kar leti hoon - 6,500 rupees aaj by 8 PM. Payment ke baad please mujhe message kar dijiyega ya customer care ko call kar dijiyega confirmation ke liye. Baaki 9,347 rupees ka due date 30th January rahega. Koi aur sawal?", "timestamp": "2024-01-15T10:31:55Z"},
+        {"role": "customer", "content": "Nahi, theek hai. Dhanyavaad.", "timestamp": "2024-01-15T10:32:10Z"},
+        {"role": "agent", "content": "Thank you sir. Aapka din shubh ho!", "timestamp": "2024-01-15T10:32:15Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 15847,
+        "days_past_due": 10,
+        "product_type": "credit_card",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 5,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "ptp",
+        "notes": "Excellent call - proper introduction, empathetic handling, negotiated partial payment successfully, clear next steps communicated"
+      }
+    },
+    {
+      "conversation_id": "coll_002",
+      "call_type": "follow_up",
+      "messages": [
+        {"role": "agent", "content": "Hello, Sunita Devi ji?", "timestamp": "2024-01-15T14:00:00Z"},
+        {"role": "customer", "content": "Haan boliye", "timestamp": "2024-01-15T14:00:05Z"},
+        {"role": "agent", "content": "Main XYZ Bank se bol raha hoon. Aapka personal loan EMI 45 din se pending hai. 23,500 rupees dena hai aapko.", "timestamp": "2024-01-15T14:00:12Z"},
+        {"role": "customer", "content": "Mujhe pata hai, mere husband ki job chali gayi thi. Abhi paise nahi hain.", "timestamp": "2024-01-15T14:00:25Z"},
+        {"role": "agent", "content": "Madam, yeh sab bahana hai. Paisa liya hai toh dena padega. Nahi diya toh legal action hoga.", "timestamp": "2024-01-15T14:00:35Z"},
+        {"role": "customer", "content": "Bahana nahi hai, sach bol rahi hoon. Thoda time dijiye please.", "timestamp": "2024-01-15T14:00:48Z"},
+        {"role": "agent", "content": "Time nahi hai. Kal tak payment karo nahi toh ghar pe log aayenge recovery ke liye.", "timestamp": "2024-01-15T14:00:58Z"},
+        {"role": "customer", "content": "Aap dhamki de rahe ho? Main complaint karungi!", "timestamp": "2024-01-15T14:01:10Z"},
+        {"role": "agent", "content": "Jo karna hai karo. Humara kaam hai recovery karna.", "timestamp": "2024-01-15T14:01:18Z"},
+        {"role": "customer", "content": "Main phone rakh rahi hoon. Bahut badtameezi kar rahe ho.", "timestamp": "2024-01-15T14:01:25Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 23500,
+        "days_past_due": 45,
+        "product_type": "personal_loan",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 1,
+        "compliance_ethics": 1,
+        "goal_achievement": 1,
+        "communication_quality": 2,
+        "empathy_tone": 1,
+        "objection_handling": 1,
+        "outcome": "refused",
+        "compliance_flags": ["Threatening language - 'ghar pe log aayenge'", "No empathy for genuine hardship", "Did not offer any restructuring options", "Dismissive of customer's situation"],
+        "notes": "Severe compliance violation - agent made threats, showed no empathy, violated RBI guidelines on fair treatment"
+      }
+    },
+    {
+      "conversation_id": "coll_003",
+      "call_type": "reminder",
+      "messages": [
+        {"role": "agent", "content": "Hello, Amit Sharma ji se baat ho sakti hai?", "timestamp": "2024-01-15T11:00:00Z"},
+        {"role": "customer", "content": "Haan, kaun bol raha hai?", "timestamp": "2024-01-15T11:00:05Z"},
+        {"role": "agent", "content": "Sir, main Neha hoon, QuickPay Finance se call kar rahi hoon. Aapka EMI payment 5 din overdue hai, amount hai 12,200 rupees.", "timestamp": "2024-01-15T11:00:15Z"},
+        {"role": "customer", "content": "Arrey haan, bhool gaya tha. Kal kar deta hoon.", "timestamp": "2024-01-15T11:00:28Z"},
+        {"role": "agent", "content": "Sure sir. Kal ka matlab exact kaunsa time tak? Main apne system mein note kar loon.", "timestamp": "2024-01-15T11:00:38Z"},
+        {"role": "customer", "content": "Shaam 6 baje tak ho jayega.", "timestamp": "2024-01-15T11:00:48Z"},
+        {"role": "agent", "content": "Perfect sir. Toh 16th January, shaam 6 baje tak 12,200 rupees. Aap app se pay kar sakte hain ya net banking se. Receipt milne ke baad automatically update ho jayega. Koi issue ho toh mujhe call kar lijiyega.", "timestamp": "2024-01-15T11:01:00Z"},
+        {"role": "customer", "content": "Okay done.", "timestamp": "2024-01-15T11:01:10Z"},
+        {"role": "agent", "content": "Thank you sir. Have a good day!", "timestamp": "2024-01-15T11:01:15Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 12200,
+        "days_past_due": 5,
+        "product_type": "emi",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 5,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "ptp",
+        "notes": "Efficient call - quick identification, immediate PTP secured, clear confirmation of date/time"
+      }
+    },
+    {
+      "conversation_id": "coll_004",
+      "call_type": "escalation",
+      "messages": [
+        {"role": "agent", "content": "Namaste, kya main Vikram Mehta ji se baat kar sakti hoon?", "timestamp": "2024-01-15T15:30:00Z"},
+        {"role": "customer", "content": "Haan, boliye.", "timestamp": "2024-01-15T15:30:05Z"},
+        {"role": "agent", "content": "Sir, main Pooja hoon, FinServe se. Sir, aapka credit card outstanding 78,500 rupees hai jo 90 din se overdue hai. Humne pehle bhi kai baar contact kiya hai.", "timestamp": "2024-01-15T15:30:18Z"},
+        {"role": "customer", "content": "Haan mujhe pata hai. Main abhi pay nahi kar sakta, business mein loss hua hai.", "timestamp": "2024-01-15T15:30:32Z"},
+        {"role": "agent", "content": "Sir, main aapki situation samajh sakti hoon. Business mein ups and downs aate rehte hain. Lekin sir, itne din ho gaye hain, ab hume kuch solution nikalna padega otherwise yeh legal process mein chala jayega jo dono ke liye mushkil hoga.", "timestamp": "2024-01-15T15:30:50Z"},
+        {"role": "customer", "content": "Legal se dara rahe ho?", "timestamp": "2024-01-15T15:31:02Z"},
+        {"role": "agent", "content": "Nahi sir, darana nahi hai. Main sirf process bata rahi hoon. Lekin usse pehle, hum aapko kuch options de sakte hain. Ek option hai settlement - aap 55,000 mein account close kar sakte hain, yeh one-time offer hai. Doosra option hai EMI conversion - 12 months mein pay kar sakte hain.", "timestamp": "2024-01-15T15:31:25Z"},
+        {"role": "customer", "content": "55,000 ek saath nahi de paunga. EMI kitni banegi?", "timestamp": "2024-01-15T15:31:40Z"},
+        {"role": "agent", "content": "Sir, 12 month EMI mein approximately 7,200 per month hogi. Yeh include karti hai outstanding plus interest. Agar 6 month ka option lein toh 14,000 per month rahegi but total amount kam padega.", "timestamp": "2024-01-15T15:31:58Z"},
+        {"role": "customer", "content": "7,200 monthly theek hai. Kaise karna hai?", "timestamp": "2024-01-15T15:32:12Z"},
+        {"role": "customer", "content": "Hello? Sun rahe ho?", "timestamp": "2024-01-15T15:32:45Z"},
+        {"role": "agent", "content": "Haan sir, sorry, system check kar rahi thi. Sir, iske liye aapko ek form sign karna padega. Main aapko email bhejti hoon, aap sign karke wapas bhej dijiye. First EMI next month 15 tarikh ko debit hogi.", "timestamp": "2024-01-15T15:33:00Z"},
+        {"role": "customer", "content": "Theek hai, bhejo email. amit.mehta@email.com pe.", "timestamp": "2024-01-15T15:33:15Z"},
+        {"role": "agent", "content": "Noted sir. Main 30 minute mein email bhej dungi. Please 48 hours mein sign karke return karna hai. Koi bhi doubt ho toh is number pe call kar lijiyega. Thank you for your cooperation sir.", "timestamp": "2024-01-15T15:33:30Z"},
+        {"role": "customer", "content": "Okay, thank you.", "timestamp": "2024-01-15T15:33:40Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 78500,
+        "days_past_due": 90,
+        "product_type": "credit_card",
+        "customer_segment": "sme"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 5,
+        "communication_quality": 4,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "ptp",
+        "notes": "Excellent escalation handling - empathetic, offered multiple restructuring options, converted hostile customer to agreement. Minor delay in response noted but handled well."
+      }
+    },
+    {
+      "conversation_id": "coll_005",
+      "call_type": "reminder",
+      "messages": [
+        {"role": "agent", "content": "Hello, Priya Verma ji?", "timestamp": "2024-01-15T09:00:00Z"},
+        {"role": "customer", "content": "Haan, boliye.", "timestamp": "2024-01-15T09:00:05Z"},
+        {"role": "agent", "content": "Ma'am main CreditFirst se bol raha hoon. Payment due hai.", "timestamp": "2024-01-15T09:00:10Z"},
+        {"role": "customer", "content": "Kitna due hai?", "timestamp": "2024-01-15T09:00:18Z"},
+        {"role": "agent", "content": "8,500.", "timestamp": "2024-01-15T09:00:22Z"},
+        {"role": "customer", "content": "Due date kab thi?", "timestamp": "2024-01-15T09:00:30Z"},
+        {"role": "agent", "content": "5 tarikh.", "timestamp": "2024-01-15T09:00:35Z"},
+        {"role": "customer", "content": "Matlab 10 din ho gaye. Late fee lagegi?", "timestamp": "2024-01-15T09:00:45Z"},
+        {"role": "agent", "content": "Haan.", "timestamp": "2024-01-15T09:00:50Z"},
+        {"role": "customer", "content": "Kitni?", "timestamp": "2024-01-15T09:00:58Z"},
+        {"role": "agent", "content": "Check karna padega.", "timestamp": "2024-01-15T09:01:05Z"},
+        {"role": "customer", "content": "Toh check karo na. Main wait kar rahi hoon.", "timestamp": "2024-01-15T09:01:15Z"},
+        {"role": "agent", "content": "500 rupees.", "timestamp": "2024-01-15T09:01:35Z"},
+        {"role": "customer", "content": "Theek hai, kal kar dungi payment.", "timestamp": "2024-01-15T09:01:45Z"},
+        {"role": "agent", "content": "Okay.", "timestamp": "2024-01-15T09:01:50Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 8500,
+        "days_past_due": 10,
+        "product_type": "credit_card",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 2,
+        "compliance_ethics": 4,
+        "goal_achievement": 3,
+        "communication_quality": 1,
+        "empathy_tone": 2,
+        "objection_handling": 2,
+        "outcome": "ptp",
+        "notes": "Poor communication - agent gave minimal responses, made customer work hard to get basic information, no proper introduction, no confirmation of PTP details, unprofessional"
+      }
+    },
+    {
+      "conversation_id": "coll_006",
+      "call_type": "settlement",
+      "messages": [
+        {"role": "agent", "content": "Hello, good afternoon. Kya main Ramesh Gupta ji se baat kar sakti hoon?", "timestamp": "2024-01-15T14:30:00Z"},
+        {"role": "customer", "content": "Main Ramesh bol raha hoon.", "timestamp": "2024-01-15T14:30:05Z"},
+        {"role": "agent", "content": "Namaste sir, main Anjali hoon, LoanCare se. Sir, aapka personal loan account hai humare paas jisme 1,45,000 rupees outstanding hai aur yeh 120 din se overdue hai. Aaj main aapko ek special settlement offer ke baare mein batana chahti thi.", "timestamp": "2024-01-15T14:30:22Z"},
+        {"role": "customer", "content": "Settlement matlab?", "timestamp": "2024-01-15T14:30:35Z"},
+        {"role": "agent", "content": "Sir, settlement mein aap poore amount se kam mein apna account close kar sakte hain. Aapke case mein, hum 95,000 rupees mein account close karne ka offer de rahe hain - yeh 34% discount hai total outstanding pe.", "timestamp": "2024-01-15T14:30:55Z"},
+        {"role": "customer", "content": "95,000 bhi bahut hai. Itna ek saath kahan se launga?", "timestamp": "2024-01-15T14:31:10Z"},
+        {"role": "agent", "content": "Sir, samajh sakti hoon. Kya aap bata sakte hain approximately kitna arrange kar sakte hain? Shayad hum koi middle ground nikal sakein.", "timestamp": "2024-01-15T14:31:25Z"},
+        {"role": "customer", "content": "Maximum 60-65,000 ho sakta hai.", "timestamp": "2024-01-15T14:31:40Z"},
+        {"role": "agent", "content": "Sir, 65,000 mein mushkil hai but main apni senior se baat karke aapko callback karti hoon. Agar 75,000 tak aa sakte hain toh shayad kuch ho sakta hai. Meanwhile, aap bhi dekh lijiye kuch arrangement ho sakta hai ya nahi.", "timestamp": "2024-01-15T14:32:00Z"},
+        {"role": "customer", "content": "75,000 bahut push hai but dekh ta hoon. Kab tak call karogi?", "timestamp": "2024-01-15T14:32:18Z"},
+        {"role": "agent", "content": "Sir, main aaj shaam 6 baje tak aapko call karti hoon confirmation ke saath. Tab tak yeh offer valid rahega. Aapka number yahi hai na - 98765XXXXX?", "timestamp": "2024-01-15T14:32:35Z"},
+        {"role": "customer", "content": "Haan yahi hai. Theek hai, wait karta hoon.", "timestamp": "2024-01-15T14:32:48Z"},
+        {"role": "agent", "content": "Thank you sir. Main definitely call karungi. Aapka din shubh ho!", "timestamp": "2024-01-15T14:32:55Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 145000,
+        "days_past_due": 120,
+        "product_type": "personal_loan",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 4,
+        "compliance_ethics": 5,
+        "goal_achievement": 4,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 4,
+        "outcome": "callback",
+        "notes": "Good settlement negotiation - clear explanation, empathetic to financial constraints, proactive callback scheduled. Could have explored more options before escalating to senior."
+      }
+    },
+    {
+      "conversation_id": "coll_007",
+      "call_type": "follow_up",
+      "messages": [
+        {"role": "agent", "content": "Hello, Deepak Singh ji?", "timestamp": "2024-01-15T16:00:00Z"},
+        {"role": "customer", "content": "Haan boliye.", "timestamp": "2024-01-15T16:00:05Z"},
+        {"role": "agent", "content": "Sir, main Rohit hoon MoneyFirst se. Sir, aapne last week promise kiya tha ki Friday tak 18,000 rupees EMI pay karenge. Payment nahi aayi abhi tak.", "timestamp": "2024-01-15T16:00:18Z"},
+        {"role": "customer", "content": "Haan woh actually unexpected expense aa gaya. Bache ki school fees deni padi urgently.", "timestamp": "2024-01-15T16:00:35Z"},
+        {"role": "agent", "content": "Sir, main samajh sakta hoon, bachon ki padhai important hai. Lekin sir, yeh bhi important hai ki humara commitment pura ho. Ab aap kab tak kar sakte hain?", "timestamp": "2024-01-15T16:00:52Z"},
+        {"role": "customer", "content": "Is hafte mushkil hai. Next week Wednesday tak pakka.", "timestamp": "2024-01-15T16:01:08Z"},
+        {"role": "agent", "content": "Sir, already ek week delay ho chuka hai. Agar Wednesday tak bhi nahi hua toh late payment charges aur badh jayenge, plus credit bureau mein report bhi ja sakti hai jo future mein loan lene mein dikkat karega.", "timestamp": "2024-01-15T16:01:28Z"},
+        {"role": "customer", "content": "Arrey bhai samajh raha hoon. Kya karun, paise toh hain nahi abhi.", "timestamp": "2024-01-15T16:01:42Z"},
+        {"role": "agent", "content": "Sir, ek kaam karte hain - kya aap 10,000 is week aur baaki 8,000 next week kar sakte hain? Isse kam se kam partial payment record ho jayega.", "timestamp": "2024-01-15T16:01:58Z"},
+        {"role": "customer", "content": "Hmm... 10,000 Saturday tak ho sakta hai shayad.", "timestamp": "2024-01-15T16:02:12Z"},
+        {"role": "agent", "content": "Sir Saturday matlab 20th January. Aur baaki 8,000 Wednesday 24th tak. Yeh final hai na sir?", "timestamp": "2024-01-15T16:02:25Z"},
+        {"role": "customer", "content": "Haan bhai, is baar pakka. Note kar lo.", "timestamp": "2024-01-15T16:02:38Z"},
+        {"role": "agent", "content": "Thank you sir. Main note kar raha hoon - 10,000 on 20th Jan aur 8,000 on 24th Jan. Sir, Saturday ko main ek reminder message bhej dunga. Please iss baar miss mat kijiyega.", "timestamp": "2024-01-15T16:02:55Z"},
+        {"role": "customer", "content": "Theek hai, nahi karunga miss. Bye.", "timestamp": "2024-01-15T16:03:05Z"},
+        {"role": "agent", "content": "Thank you sir, take care.", "timestamp": "2024-01-15T16:03:10Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 18000,
+        "days_past_due": 35,
+        "product_type": "personal_loan",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 5,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "ptp",
+        "notes": "Excellent follow-up on broken promise - acknowledged customer's reason, explained consequences without threatening, negotiated split payment, confirmed specific dates"
+      }
+    },
+    {
+      "conversation_id": "coll_008",
+      "call_type": "reminder",
+      "messages": [
+        {"role": "agent", "content": "Hello, Kavita Reddy ji se baat ho sakti hai?", "timestamp": "2024-01-15T11:30:00Z"},
+        {"role": "customer", "content": "Main hi hoon. Kaunsi company se hai?", "timestamp": "2024-01-15T11:30:06Z"},
+        {"role": "agent", "content": "Ma'am, FastLoan Finance se. Aapki EMI due hai 9,800 rupees.", "timestamp": "2024-01-15T11:30:14Z"},
+        {"role": "customer", "content": "Maine toh pay kiya tha 3 din pehle!", "timestamp": "2024-01-15T11:30:25Z"},
+        {"role": "agent", "content": "Ma'am, humare system mein nahi dikha raha. Aapke paas receipt hai?", "timestamp": "2024-01-15T11:30:35Z"},
+        {"role": "customer", "content": "Haan hai, UPI se kiya tha. Transaction ID bataun?", "timestamp": "2024-01-15T11:30:48Z"},
+        {"role": "agent", "content": "Haan please ma'am, transaction ID aur date bataiye.", "timestamp": "2024-01-15T11:30:56Z"},
+        {"role": "customer", "content": "Transaction ID hai UPI234567890, date 12th January, amount 9,800.", "timestamp": "2024-01-15T11:31:15Z"},
+        {"role": "agent", "content": "Thank you ma'am. Main abhi check karti hoon... Ma'am, mujhe dikha raha hai ki payment FastLoan ke account mein nahi gayi hai. Kya aap confirm kar sakti hain ki payment kis account mein gayi?", "timestamp": "2024-01-15T11:31:45Z"},
+        {"role": "customer", "content": "Ek second... Oh no, yeh toh purane account number pe gayi hai. Galti ho gayi mujhse!", "timestamp": "2024-01-15T11:32:10Z"},
+        {"role": "agent", "content": "Koi baat nahi ma'am, yeh ho jata hai. Woh purana account bhi humara hi hai actually, lekin different product ka hai. Main internal transfer request raise kar deti hoon. 24-48 hours mein reflect ho jayega aur main aapko confirmation message bhej dungi.", "timestamp": "2024-01-15T11:32:35Z"},
+        {"role": "customer", "content": "Oh thank god! Mujhe laga paisa gayab ho gaya. Thank you so much!", "timestamp": "2024-01-15T11:32:50Z"},
+        {"role": "agent", "content": "You're welcome ma'am. Agli baar ke liye main aapko sahi account details SMS kar deti hoon taaki confusion na ho. Kuch aur help chahiye?", "timestamp": "2024-01-15T11:33:05Z"},
+        {"role": "customer", "content": "Nahi, bas itna hi. Thank you!", "timestamp": "2024-01-15T11:33:15Z"},
+        {"role": "agent", "content": "Thank you ma'am, have a nice day!", "timestamp": "2024-01-15T11:33:20Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 9800,
+        "days_past_due": 3,
+        "product_type": "personal_loan",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 5,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "ptp",
+        "notes": "Excellent dispute resolution - investigated customer's claim, identified the issue, provided solution, offered preventive measure for future. Turned potential conflict into positive experience."
+      }
+    },
+    {
+      "conversation_id": "coll_009",
+      "call_type": "escalation",
+      "messages": [
+        {"role": "agent", "content": "Hello, Suresh Patel ji?", "timestamp": "2024-01-15T17:00:00Z"},
+        {"role": "customer", "content": "Haan kaun?", "timestamp": "2024-01-15T17:00:05Z"},
+        {"role": "agent", "content": "Sir main BankPlus se Anil bol raha hoon. Sir aapka loan 180 din se overdue hai. 2,35,000 outstanding hai.", "timestamp": "2024-01-15T17:00:18Z"},
+        {"role": "customer", "content": "Dekho, main already bol chuka hoon tumhari company ko - mera ek bada client ne payment nahi kiya. Jab woh dega tab main dunga. Simple.", "timestamp": "2024-01-15T17:00:38Z"},
+        {"role": "agent", "content": "Sir, aapki problem samajh mein aati hai business mein aisi situations aati hain. Lekin sir, 6 mahine ho gaye hain. Humne bhi flexibility di thi pehle, ab bank level pe bhi pressure aa raha hai.", "timestamp": "2024-01-15T17:00:58Z"},
+        {"role": "customer", "content": "Toh main kya karun? Jadu se paise nikaalun?", "timestamp": "2024-01-15T17:01:12Z"},
+        {"role": "agent", "content": "Sir, jaadu ki zarurat nahi. Dekhiye, kuch options hain jinse dono parties ko relief mil sakti hai. Pehla - kya aap koi property ya asset pledge kar sakte hain temporarily? Doosra - kya koi family member help kar sakta hai partial amount mein? Teesra - hum OTS de sakte hain around 1,60,000 mein.", "timestamp": "2024-01-15T17:01:42Z"},
+        {"role": "customer", "content": "Property pledge nahi karunga. Family se already le chuka hoon. OTS 1,60,000 bola na? Kitne time mein dena hoga?", "timestamp": "2024-01-15T17:02:02Z"},
+        {"role": "agent", "content": "Sir, ideally one shot mein better hai but 2 installments mein bhi ho sakta hai - 80,000 now aur 80,000 within 30 days.", "timestamp": "2024-01-15T17:02:20Z"},
+        {"role": "customer", "content": "80,000 abhi nahi hai. 50,000 de sakta hoon aur baaki do mahine mein.", "timestamp": "2024-01-15T17:02:38Z"},
+        {"role": "agent", "content": "Sir, 50,000 plus do mahine matlab 3 installments... Main apne manager se approval lena padega. Agar woh approve karte hain toh 50,000 ab, 55,000 February end, aur 55,000 March end. Total 1,60,000. Chalega?", "timestamp": "2024-01-15T17:03:05Z"},
+        {"role": "customer", "content": "55-55 thoda zyada hai but... theek hai, karo approve. Jaldi khatam karna hai yeh tension.", "timestamp": "2024-01-15T17:03:22Z"},
+        {"role": "agent", "content": "Sure sir, main aaj hi request raise karta hoon. Kal tak aapko call karke confirm karunga. Please first 50,000 ready rakhiyega agar approval aa jaye toh. Aapka number same hai na?", "timestamp": "2024-01-15T17:03:42Z"},
+        {"role": "customer", "content": "Haan same hai. Kal baat karte hain.", "timestamp": "2024-01-15T17:03:55Z"},
+        {"role": "agent", "content": "Thank you sir. Kal dopahar tak definitely call karunga.", "timestamp": "2024-01-15T17:04:02Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 235000,
+        "days_past_due": 180,
+        "product_type": "personal_loan",
+        "customer_segment": "sme"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 4,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "callback",
+        "notes": "Excellent handling of difficult customer - stayed calm, offered multiple practical options, negotiated settlement with flexible payment plan, pending manager approval"
+      }
+    },
+    {
+      "conversation_id": "coll_010",
+      "call_type": "reminder",
+      "messages": [
+        {"role": "agent", "content": "Hello, Meera Joshi ji?", "timestamp": "2024-01-15T10:00:00Z"},
+        {"role": "customer", "content": "Ji haan.", "timestamp": "2024-01-15T10:00:04Z"},
+        {"role": "agent", "content": "Good morning ma'am, main Sanjay hoon PayEasy se. Ma'am aapki credit card payment 7,200 rupees 15 din se pending hai. Bas ek friendly reminder ke liye call kiya.", "timestamp": "2024-01-15T10:00:18Z"},
+        {"role": "customer", "content": "Haan actually hospital mein thi main, isliye miss ho gaya. Aaj hi kar deti hoon.", "timestamp": "2024-01-15T10:00:35Z"},
+        {"role": "agent", "content": "Oh, I hope aap theek hain ab ma'am?", "timestamp": "2024-01-15T10:00:42Z"},
+        {"role": "customer", "content": "Haan ab theek hoon, minor surgery thi.", "timestamp": "2024-01-15T10:00:52Z"},
+        {"role": "agent", "content": "Good to hear ma'am. Aap apna khayal rakhiye. Payment ki koi jaldi nahi, aaj ya kal kab bhi convenient ho kar dijiyega. Health pehle.", "timestamp": "2024-01-15T10:01:05Z"},
+        {"role": "customer", "content": "Thank you itna samajhne ke liye. Aaj shaam tak kar dungi definitely.", "timestamp": "2024-01-15T10:01:18Z"},
+        {"role": "agent", "content": "Sure ma'am, koi rush nahi. Agar koi issue ho payment mein toh is number pe call kar lijiyega. Get well soon!", "timestamp": "2024-01-15T10:01:30Z"},
+        {"role": "customer", "content": "Thank you so much, bye.", "timestamp": "2024-01-15T10:01:38Z"},
+        {"role": "agent", "content": "Bye ma'am, take care!", "timestamp": "2024-01-15T10:01:42Z"}
+      ],
+      "metadata": {
+        "outstanding_amount": 7200,
+        "days_past_due": 15,
+        "product_type": "credit_card",
+        "customer_segment": "retail"
+      },
+      "ground_truth": {
+        "overall_score": 5,
+        "compliance_ethics": 5,
+        "goal_achievement": 5,
+        "communication_quality": 5,
+        "empathy_tone": 5,
+        "objection_handling": 5,
+        "outcome": "ptp",
+        "notes": "Excellent empathetic handling - recognized customer's health situation, showed genuine concern, still secured payment commitment without being pushy. Model conversation."
+      }
+    }
+  ]
+}
