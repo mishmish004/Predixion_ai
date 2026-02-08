@@ -236,3 +236,15 @@ The system's scores can be compared against the `ground_truth` labels in `sample
 - Medium calls (score 3-4): adequate but with specific gaps
 
 The precedent retrieval mechanism helps maintain consistency by anchoring new evaluations to these human-graded baselines.
+
+Moving forward, I plan to evolve this system from a behavioral auditor into a strict compliance engine by directly integrating official RBI guidelines.
+
+My approach involves ingesting regulatory texts into a vector database (using sentence transformers) alongside a keyword index for specific legal terminology. 
+
+Context Extraction: The first LLM pass analyzes the conversation to extract intent and emotional signals.
+
+Rule Retrieval & Scoring: These signals are used to query the vector database, retrieving and scoring the most relevant RBI rules based on the specific context.
+
+Final Adjudication: Finally, I would feed the original conversation, the detected emotions, and the top-ranked legal clauses into a second LLM.
+
+This "Hybrid RAG" architecture ensures the system doesn't just guess at compliance but judges interactions based on the actual ground-truth regulations.
