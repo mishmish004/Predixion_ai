@@ -1,5 +1,6 @@
 # Predixion Debt Audit System
 
+The development workflow for this assessment followed a rigorous "Learn-First, Build-Fast" methodology. The initial Minimum Viable Product (MVP) was constructed using a personal library of modular functions to rapidly establish the core architecture. To elevate the system to production standards, Large Language Models (LLMs) were utilized as a technical audit tool—specifically for identifying edge cases, enforcing strict error handling, and scanning for security vulnerabilities. Additionally, the concurrency model was refined through AI-assisted review to optimize asynchronous throughput, incorporating patterns inspired by Rust-based safety principles. Finally, the documentation was structured to ensure that all deployment and usage instructions are clear, reproducible, and verifiable.
 An automated evaluation system for Indian debt collection voice agent conversations. It analyzes Hinglish (Hindi-English code-mixed) call transcripts and produces structured quality scores across five dimensions, aligned with RBI (Reserve Bank of India) Fair Practices Code.
 
 ## Architecture Overview
